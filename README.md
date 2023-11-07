@@ -6,6 +6,7 @@ The objective of "Double Entendre Showdown" is to create the funniest and most c
 **`Players: 3+`**
 
 **`Sample:`**
+
 Player 1 and Player 2 are players, Player 3 is the judge for this round.
 
 The game generates this double entendre:
