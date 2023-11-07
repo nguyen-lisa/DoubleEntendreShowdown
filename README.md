@@ -1,11 +1,11 @@
 # DoubleEntendreShowdown
 
-Objective:
+**`Objective:`**
 The objective of "Double Entendre Showdown" is to create the funniest and most clever phrases that can be applied to both a "Safe" situation and a "Risky" situation, while keeping the audience entertained and amused.
 
-Players: 3+
+**`Players: 3+`**
 
-Sample:
+**`Sample:`**
 Player 1 and Player 2 are players, Player 3 is the judge for this round.
 
 The game generates this double entendre:
