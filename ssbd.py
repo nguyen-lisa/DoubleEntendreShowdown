@@ -10,3 +10,5 @@ danger = df['Danger'].dropna()
 danger_clean = danger.tolist()
 
 print(random.choice(safe_clean) + random.choice(danger_clean))
+
+#random
