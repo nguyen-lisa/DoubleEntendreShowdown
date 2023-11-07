@@ -7,7 +7,7 @@ The objective of "Double Entendre Showdown" is to create the funniest and most c
 
 **`Rating: PG13+`**
 
-**`Sample:`**
+**`Sample Playthrough:`**
 
 Player 1 and Player 2 are players, Player 3 is the judge for this round.
 
