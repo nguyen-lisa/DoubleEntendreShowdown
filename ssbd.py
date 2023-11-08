@@ -1,5 +1,12 @@
 import pandas as pd #data analysis library
 import random
+import tkinter as tk
+from tkinter import *
+
+root = tk.Tk()
+root.resizable(False, False)
+root.geometry('600x200')
+root.title('Double Entendre Showdown')
 
 df = pd.read_csv("prompts_ff.csv") #reads spreadsheet 
 
@@ -9,6 +16,27 @@ safe_clean = safe.values.tolist()
 danger = df['Danger'].dropna()
 danger_clean = danger.tolist()
 
-print(random.choice(safe_clean) + random.choice(danger_clean))
+#random.choice(safe_clean) + '\n' + random.choice(danger_clean)
 
-#random
+def setTextInput(text):
+    textExample.delete(1.0, "end")
+    textExample.insert(1.0, text)
+
+textExample = tk.Text(
+    root,
+    height=10
+)
+textExample.pack()
+
+button = tk.Button(
+    root,
+    height="5",
+    width="50",
+    #bd="10",
+    text="Generate New Prompt",
+    command=lambda: setTextInput(random.choice(safe_clean) + '\n' + random.choice(danger_clean)),
+)
+button.place(x=20, y=150)
+button.pack()
+
+root.mainloop()
