@@ -19,8 +19,10 @@ danger_clean = danger.tolist()
 #random.choice(safe_clean) + '\n' + random.choice(danger_clean)
 
 def setTextInput(text):
+    textExample.configure(state="normal")
     textExample.delete(1.0, "end")
     textExample.insert(1.0, text)
+    textExample.configure(state="disabled")
 
 textExample = tk.Text(
     root,
@@ -34,7 +36,7 @@ button = tk.Button(
     width="50",
     #bd="10",
     text="Generate New Prompt",
-    command=lambda: setTextInput(random.choice(safe_clean) + '\n' + random.choice(danger_clean)),
+    command=lambda: setTextInput(random.choice(safe_clean) + '\n' + random.choice(danger_clean))
 )
 button.place(x=20, y=150)
 button.pack()
