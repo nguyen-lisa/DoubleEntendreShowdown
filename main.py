@@ -5,7 +5,7 @@ import random
 from ttkbootstrap.constants import *
 from tkinter import *
 
-app = ttk.Window(themename="vapor")
+app = ttk.Window(themename="darkly")
 app.resizable(False, False)
 app.geometry('670x450')
 app.title('Double Entendre Showdown')
@@ -27,7 +27,7 @@ label = ttk.Label(
     text="Double Entendre Showdown"
 )
 label.pack(pady=30)
-label.config(font=("Courier New CE", 20))
+label.config(font=("Courier New CE", 20, "bold"))
 
 prompt_frame = ttk.Frame(app)
 prompt_frame.pack(
@@ -49,7 +49,9 @@ textExample = ttk.Text(
 textExample.configure(state="disabled")
 textExample.pack()
 
-ttk.Label(prompt_frame, text="Prompt", font=("BIZ UDPGothic", 12, "bold")).pack(side="left", padx=5)
+promptLabel = ttk.Label(prompt_frame, text="Prompt", font=("BIZ UDPGothic", 12, "bold"))
+promptLabel.configure(anchor=W)
+promptLabel.pack(padx=5)
 #ttk.Text(prompt_frame).pack(side="left", fill="x", expand=True, padx=5)
 
 stl = ttk.Style()
@@ -57,7 +59,7 @@ stl.configure('C.TLabel',padding=[-15,-15,-15,-15], anchor="center") #10,10,10,1
 
 stl.map('C.TLabel',
     foreground = [('pressed','grey'),('active','black')],
-    background = [('pressed','!disabled','dark grey'),('active','light blue')],
+    background = [('pressed','!disabled','dark grey'),('active','white')],
     relief=[('pressed', 'sunken'),
             ('!pressed', 'raised')]
 )
