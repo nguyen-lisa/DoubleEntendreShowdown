@@ -10,10 +10,9 @@ app.resizable(False, False)
 app.geometry('670x450')
 app.title('Double Entendre Showdown')
 
-'''
 click_btn= PhotoImage(file='btn.png')
 img_label= Label(image=click_btn)
-'''
+
 
 df = pd.read_csv("prompts_ff.csv") #reads spreadsheet 
 
@@ -70,7 +69,7 @@ genButton = ttk.Button(button_frame,
            style='C.TLabel',
            command=lambda: setTextInput(random.choice(safe_clean) + '\n' + random.choice(danger_clean)),
            )
-genButton.configure() #'''image = click_btn'''
+genButton.configure(image = click_btn) 
 genButton.pack()
 
 
