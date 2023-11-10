@@ -53,7 +53,7 @@ ttk.Label(prompt_frame, text="Prompt", font=("BIZ UDPGothic", 12, "bold")).pack(
 #ttk.Text(prompt_frame).pack(side="left", fill="x", expand=True, padx=5)
 
 stl = ttk.Style()
-stl.configure('C.TLabel',padding=[10,10,10,15], anchor="center")
+stl.configure('C.TLabel',padding=[-15,-15,-15,-15], anchor="center") #10,10,10,15
 
 stl.map('C.TLabel',
     foreground = [('pressed','grey'),('active','black')],
@@ -63,7 +63,7 @@ stl.map('C.TLabel',
 )
 
 button_frame = ttk.Frame(app)
-button_frame.pack(padx=5, pady=5, fill="x", anchor="center")
+button_frame.pack(padx=10, pady=20, fill="x", anchor="center")
 genButton = ttk.Button(button_frame,
            text="Generate New Prompt", 
            style='C.TLabel',
