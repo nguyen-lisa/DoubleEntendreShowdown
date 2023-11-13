@@ -2,7 +2,8 @@ import pandas as pd #data analysis library
 import random
 import tkinter as tk
 from tkinter import *
-#import ttkbootstrap as ttk
+
+#random prompt generator using purely Tkinter
 
 root = tk.Tk()
 root.resizable(False, False)
